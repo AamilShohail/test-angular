@@ -1,0 +1,13 @@
+<app-ngfor></app-ngfor>
+<p>ngif works!</p>
+<h2 *ngIf="true">ngIf Directive</h2>
+
+<ng-template #thenBlock>
+  <h2>This is visible</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>This is hidden</h2>
+</ng-template>
+
+<div *ngIf="isDisplay; then thenBlock; else elseBlock">ng If test</div>
