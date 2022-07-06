@@ -16,7 +16,10 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { ParentComponent } from './componentinteraction/parent/parent.component';
 import { ChildComponent } from './componentinteraction/child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TabgroupexampleComponent } from './components/tabgroupexample/tabgroupexample.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { DelayRenderingDirectiveDirective } from './components/delay-rendering-directive.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,8 +36,10 @@ import { PipesComponent } from './pipes/pipes.component';
     ParentComponent,
     ChildComponent,
     PipesComponent,
+    TabgroupexampleComponent,
+    DelayRenderingDirectiveDirective,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatTabsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
