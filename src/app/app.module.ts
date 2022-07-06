@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabgroupexampleComponent } from './components/tabgroupexample/tabgroupexample.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DelayRenderingDirectiveDirective } from './components/delay-rendering-directive.directive';
+import { TestStateManagementComponent } from './test-state-management/test-state-management.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { DelayRenderingDirectiveDirective } from './components/delay-rendering-d
     PipesComponent,
     TabgroupexampleComponent,
     DelayRenderingDirectiveDirective,
+    TestStateManagementComponent,
   ],
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatTabsModule],
   providers: [],
